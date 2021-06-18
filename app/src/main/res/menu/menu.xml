@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   >
+  <item android:title="User" >
+      <menu>
+
+          <item android:title="Logout" android:id="@+id/logout" android:icon="@drawable/logout">
+
+          </item>
+          <item android:title="Email" android:id="@+id/email" android:icon="@drawable/ic_baseline_email_24">
+
+          </item>
+          <item android:title="Settings" android:id="@+id/settings" android:icon="@drawable/ic_baseline_settings_applications_24">
+
+          </item>
+          <item android:title="Create Quiz" android:id="@+id/create_quiz"
+              android:icon="@drawable/ic_baseline_create_24">
+          </item>
+
+          <item android:title="Create Group"
+              android:icon="@drawable/group"
+              android:id="@+id/create_groups">
+          </item>
+          <item android:title="FeedBack"
+                 android:id="@+id/feedback"
+              android:icon="@drawable/feedback">
+          </item>
+      </menu>
+  </item>
+</menu>

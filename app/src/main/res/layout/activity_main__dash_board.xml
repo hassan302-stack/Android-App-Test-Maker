@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity_DashBoard">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/border_top_bottom"
+        android:id="@+id/parent">
+        <Button
+            android:id="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="DashBoard"
+            android:textSize="10sp"
+            android:drawableRight="@drawable/drop_down"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+            android:background="@drawable/hover"
+            android:layout_marginLeft=" 15dp"
+            />
+        <Button
+            android:layout_toRightOf="@+id/dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Help"
+            android:textSize="10sp"
+            android:drawableRight="@drawable/drop_down"
+            android:paddingTop="10dp"
+            android:paddingLeft="15dp"
+            android:gravity="center"
+            android:textFontWeight="@integer/bold"
+            android:background="@drawable/hover"
+            android:layout_marginLeft=" 15dp"
+            />
+        <Button
+            android:background="@drawable/hover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="My Account"
+            android:textSize="10sp"
+            android:drawableRight="@drawable/drop_down"
+            android:paddingTop="10dp"
+            android:layout_marginRight=" 15dp"
+            android:layout_marginLeft="80dp"
+               android:layout_alignParentEnd="true"
+            android:gravity="center"
+            />
+    </RelativeLayout>
+</RelativeLayout>

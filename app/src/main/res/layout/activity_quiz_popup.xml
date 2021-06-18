@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Quiz_popup"
+    >
+    <include
+        layout="@layout/activity_main__dash_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardMaxElevation="12dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true"
+        android:elevation="12dp"
+
+    android:layout_centerVertical="true"    >
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/group"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:text="Generate for Group"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@color/orange"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:text="Generate By Link"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="@color/design_default_color_primary"
+        android:gravity="center"
+        android:layout_toRightOf="@id/group"
+        />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@id/link"
+        android:layout_gravity="center"
+        android:paddingLeft="30dp"
+        android:text="Select Your Area of Quiz!"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:background="@color/white"
+        android:textStyle="bold" />
+</RelativeLayout>
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

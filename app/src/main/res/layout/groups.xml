@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".groups"
+    >
+    <!--       DashBoard-->
+
+<!--<LinearLayout-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_marginTop="50dp"-->
+<!--    android:background="@color/black"-->
+<!--    android:id="dash">-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text="DashBoard"-->
+<!--        android:textSize="16sp"-->
+<!--        android:drawableRight="@drawable/drop_down"-->
+<!--        android:paddingTop="25dp"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/hover"-->
+
+<!--        />-->
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text="Help"-->
+<!--        android:textSize="16sp"-->
+<!--        android:drawableRight="@drawable/drop_down"-->
+<!--        android:paddingTop="25dp"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:layout_gravity="center"-->
+<!--         android:textFontWeight="@integer/bold"-->
+<!--        android:background="@drawable/hover"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:background="@drawable/hover"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text="My Account"-->
+<!--        android:textSize="16sp"-->
+<!--        android:drawableRight="@drawable/drop_down"-->
+<!--        android:paddingTop="25dp"-->
+<!--        android:paddingLeft="15dp"-->
+<!--        android:layout_marginLeft="80dp"-->
+
+<!--        />-->
+<!--</LinearLayout>-->
+    <include
+        layout="@layout/activity_main__dash_board"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+<!--       DashBoard-->
+
+    <TextView
+
+        android:id="@+id/group"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/list"
+        android:layout_centerVertical="true"
+         android:layout_marginLeft="10dp"
+        android:background="@color/dark_blue"
+        android:drawableLeft="@drawable/group"
+        android:paddingLeft="5dp"
+        android:text="Groups"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:orientation="horizontal"
+        android:background="@drawable/border"
+        >
+   <RelativeLayout
+      android:layout_marginTop="5dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/border_top_bottom"
+          android:backgroundTint="#EEEEEE"
+>
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/menu" />
+
+       <Button
+
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:background="@color/orange"
+           android:drawableEnd="@drawable/add"
+           android:paddingLeft="13dp"
+           android:paddingRight="13dp"
+           android:paddingBottom="5dp"
+           android:layout_marginRight="10dp"
+           android:text="\New Group"
+           android:textColor="@color/white"
+           android:textSize="13sp"
+           android:layout_alignParentEnd="true"
+           />
+
+   </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
